@@ -1,0 +1,49 @@
+body{ 
+    margin:0; 
+    background:rgb(0, 0, 0); 
+    color:#fff; 
+    font-family:Arial; 
+}
+.wrap{ 
+    padding:16px;
+    max-width:1100px; 
+    margin:0 auto; 
+}
+.topbar{ 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between;
+    gap:12px; 
+    margin-bottom:12px; 
+}
+.pill{ 
+    color:rgb(255, 255, 255); 
+    text-decoration:none; 
+    border:1px solid rgba(255,255,255,.35); 
+    padding:6px 10px; 
+    border-radius:999px; 
+}
+.audio{ 
+    width:100%; 
+    margin-top:8px; 
+    height:42px; 
+}
+.actions{ 
+    margin-top:14px; 
+}
+.ghost-btn{ 
+    display:inline-block; 
+    background:transparent;
+    color:rgb(255, 255, 255); 
+    border:1px solid rgba(0,60,255,1);
+    border-radius:16px; 
+    padding:10px 14px; 
+    text-decoration:none; 
+}
+.ghost-btn:hover{ 
+    border-color:rgba(255,255,255,1); 
+    transform:scale(1.03); 
+    transition:.2s; 
+}
+
+
