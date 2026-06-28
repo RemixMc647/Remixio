@@ -25,9 +25,9 @@
         titleEl.textContent = "Song not found";
         return;
     
-alert("./" + decoded);
+
 audio.src = "./" + decoded;
-    audio.load();
+    
 
     audio.play().catch(error => {
         console.log("Autoplay blocked by browser.", error);
