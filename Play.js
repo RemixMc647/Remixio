@@ -103,7 +103,7 @@ const songs = [
 },
 {
     title: 'Asake - Lonely At The Top',
-    Audio: './Asake_-_Lonely_At_The_Top.mp3'
+    file: './Asake_-_Lonely_At_The_Top.mp3'
 },
 {
     title: 'Asake Ft Olamide - Trabaye',
