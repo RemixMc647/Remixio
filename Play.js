@@ -24,11 +24,9 @@
 
         titleEl.textContent = "Song not found";
         return;
-    }
-
     
+alert("./" + decoded);
 audio.src = "./" + decoded;
-
     audio.load();
 
     audio.play().catch(error => {
