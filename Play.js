@@ -26,11 +26,8 @@
         return;
     }
 
-    // `file` is expected to be the mp3 filename (ex: "Asake_-_Lonely_At_The_Top.mp3")
-    // Backend serves it at `/music/<filename>`.
-    const decoded = decodeURIComponent(file);
-    audio.src = decoded.startsWith('http') || decoded.startsWith('/') ? decoded : `/music/${decoded}`;
-
+    
+audio.src = "./" + decoded;
 
     audio.load();
 
