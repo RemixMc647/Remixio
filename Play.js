@@ -46,13 +46,6 @@
         download.download = title + ".mp3";
     }
 
-    audio.onerror = function () {
-
-        console.error("Unable to load:", file);
-
-        alert("Couldn't play this song.\n\nFile:\n" + file);
-
-    };
 
 })();
 
