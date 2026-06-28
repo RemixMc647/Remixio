@@ -191,7 +191,7 @@ window.addEventListener('DOMContentLoaded', () => {
       const kind = card.dataset.itemKind;
 const match = dataset.find(x => x.id === id);
       const title = match?.title || 'Track';
-      const file = (match?.file || '').replace(/^\.\.\/?/, '');
+      const file = (match?.Audio || '').replace(/^\.\.\/?/, '');
 
       const playBtn = card.querySelector('[data-action="play"]');
       const downloadBtn = card.querySelector('[data-action="download"]');
