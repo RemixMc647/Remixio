@@ -1,6 +1,4 @@
-document.getElementById("downloadpage").addEventListener("click", function () {
-    window.location.href = "Download.html";
-});
+
 
 (function () {
 
