@@ -29,7 +29,15 @@
     // `file` is expected to be the mp3 filename (ex: "Asake_-_Lonely_At_The_Top.mp3")
     // Backend serves it at `/music/<filename>`.
     const decoded = decodeURIComponent(file);
-    audio.src = decoded.startsWith('http') || decoded.startsWith('/') ? decoded : `/music/${decoded}`;
+
+// Use the exact path passed from the previous page
+audio.src = decoded;
+
+audio.load();
+
+audio.play().catch(error => {
+    console.log("Autoplay blocked by browser.", error);
+});
 
 
     audio.load();
@@ -41,7 +49,7 @@
     const download = document.getElementById("download");
 
     if (download) {
-        download.href = decodeURIComponent(file);
+    download.href = decoded;
 
         download.download = title + ".mp3";
     }
