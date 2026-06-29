@@ -179,7 +179,6 @@ window.addEventListener('DOMContentLoaded', () => {
             <div class="search-result-title">${escapeHtml(m.title)}</div>
             <div class="search-result-actions">
               <button class="action-play" type="button" data-action="play">Play</button>
-              <button class="action-download" type="button" data-action="download">Download</button>
             </div>
           </div>
         `).join('')}
@@ -194,7 +193,6 @@ const match = dataset.find(x => x.id === id);
       const file = (match?.Audio || '').replace(/^\.\.\/?/, '');
 
       const playBtn = card.querySelector('[data-action="play"]');
-      const downloadBtn = card.querySelector('[data-action="download"]');
 
       playBtn?.addEventListener('click', () => {
         // Pass the exact mp3 filename so Play.html can stream it reliably.
