@@ -54,14 +54,6 @@ audio.play().catch(error => {
         download.download = title + ".mp3";
     }
 
-    audio.onerror = function () {
-
-        console.error("Unable to load:", file);
-
-        alert("Couldn't play this song.\n\nFile:\n" + file);
-
-    };
-
 })();
 
 const songs = [
@@ -111,7 +103,7 @@ const songs = [
 },
 {
     title: 'Asake - Lonely At The Top',
-    Audio: './Music/Asake_-_Lonely_At_The_Top.mp3'
+    Audio: './Asake_-_Lonely_At_The_Top.mp3'
 },
 {
     title: 'Asake Ft Olamide - Trabaye',
