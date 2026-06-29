@@ -97,7 +97,7 @@ const songs = [
 },
 {
     title: 'Another Trip Around The Sun',
-    Audio: './Music/Another trip around the sun .mp3'
+    Audio: './Another trip around the sun .mp3'
 },
 {
     title: 'Asake - 2:30',
@@ -185,7 +185,7 @@ const songs = [
 },
 {
     title: 'Backpack Bounce',
-    Audio: './Music/Backpack Bounce (1).mp3'
+    Audio: '.Backpack Bounce (1).mp3'
 },
 {
     title: 'Bella Shmurda Ft Nasty C - Philo Remix',
