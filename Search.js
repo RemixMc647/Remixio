@@ -214,4 +214,132 @@ const match = dataset.find(x => x.id === id);
   input.addEventListener('input', runSearch);
   form?.addEventListener('submit', (e) => { e.preventDefault(); runSearch(); });
 });
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Fade in sections
+    const sections = document.querySelectorAll(
+        ".hero,.trending,.featured,.categories,.results-section,.artists,.footer"
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0px)";
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.15
+    });
+
+    sections.forEach(section => {
+
+        section.style.opacity = "0";
+        section.style.transform = "translateY(60px)";
+        section.style.transition = "all .8s ease";
+
+        observer.observe(section);
+
+    });
+
+    // Hover animation for cards
+
+    document.querySelectorAll(
+        ".trend-card,.category-card,.artist-card,.search-result"
+    ).forEach(card => {
+
+        card.addEventListener("mouseenter", () => {
+
+            card.style.transform = "translateY(-10px) scale(1.03)";
+
+        });
+
+        card.addEventListener("mouseleave", () => {
+
+            card.style.transform = "translateY(0px) scale(1)";
+
+        });
+
+    });
+
+    // Glow effect on buttons
+
+    document.querySelectorAll("button").forEach(button => {
+
+        button.addEventListener("mouseenter", () => {
+
+            button.style.boxShadow =
+                "0 0 30px rgba(0,170,255,.6)";
+
+        });
+
+        button.addEventListener("mouseleave", () => {
+
+            button.style.boxShadow = "none";
+
+        });
+
+    });
+
+    // Floating music emoji
+
+    setInterval(() => {
+
+        const note = document.createElement("div");
+
+        note.innerHTML = "🎵";
+
+        note.style.position = "fixed";
+        note.style.left = Math.random() * window.innerWidth + "px";
+        note.style.bottom = "-40px";
+        note.style.fontSize = "24px";
+        note.style.pointerEvents = "none";
+        note.style.opacity = ".8";
+        note.style.zIndex = "9999";
+        note.style.transition = "transform 6s linear, opacity 6s linear";
+
+        document.body.appendChild(note);
+
+        requestAnimationFrame(() => {
+
+            note.style.transform = "translateY(-110vh)";
+            note.style.opacity = "0";
+
+        });
+
+        setTimeout(() => {
+
+            note.remove();
+
+        }, 6000);
+
+    }, 900);
+
+    // Search input animation
+
+    const input = document.getElementById("search");
+
+    if (input) {
+
+        input.addEventListener("focus", () => {
+
+            input.style.transform = "scale(1.03)";
+
+        });
+
+        input.addEventListener("blur", () => {
+
+            input.style.transform = "scale(1)";
+
+        });
+
+    }
+
+});
 
