@@ -57,6 +57,9 @@ download.href = decoded;
 
 })();
 
+
+const audio = new Audio(song.Audio);
+audio.play();
 const songs = [
     {
   title: '1da Banton Ft Kizz Daniel Tiwa Savage - No Wahala Remix (Copy)',
