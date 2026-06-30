@@ -1,45 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝕽𝖊𝖒𝖎𝖝𝖎𝖔 | Search</title>
-  <link rel="stylesheet" href="./Search.css">
-  <link rel="shortcut icon" href="./ChatGPT Image Jun 13, 2026, 11_31_10 PM.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Remixio | Search</title>
+
+    <link rel="stylesheet" href="./Search.css">
+
+    <link rel="shortcut icon"
+        href="./ChatGPT Image Jun 13, 2026, 11_31_10 PM.png"
+        type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-  <div class="nav-main">
-    <div class="background1"></div>
-    <div class="nav-bar">
-      <div class="buttons1">
-        <a href="./Search.html" class="href"><button class="button1"><u class="text1">🔎</u></button></a>
-        <a href="./Trending.html" class="href"><button class="button2"><u class="text2">▶</u></button></a>
-        <a href="./MusicHome.html" class="href"><button class="button3"><u class="text3">🏚</u></button></a>
-        <a href="./Profile.html" class="href"><button class="button4"><u class="text4">🙍🏻‍♂️</u></button></a>
-      </div>
+
+<!--================ BACKGROUND =================-->
+
+<div class="background">
+    <div class="blur one"></div>
+    <div class="blur two"></div>
+    <div class="blur three"></div>
+</div>
+
+<!--================ NAVIGATION =================-->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <h1>🎧 REMIXIO</h1>
+
+        <p>Unlimited Music</p>
+
     </div>
 
-    <div class="main-bar">
-      <div class="search-hero">
-        <div class="search-hero-left">
-          <div class="brand">
-            <div class="brand-title">♨R∑MIXI☯</div>
-            <div class="brand-sub">Search music</div>
-          </div>
+    <nav>
+
+        <a href="./MusicHome.html">
+
+            <button>
+
+                🏠
+
+                <span>Home</span>
+
+            </button>
+
+        </a>
+
+        <a href="./Trending.html">
+
+            <button>
+
+                🔥
+
+                <span>Trending</span>
+
+            </button>
+
+        </a>
+
+        <a href="./Search.html">
+
+            <button class="active">
+
+                🔎
+
+                <span>Search</span>
+
+            </button>
+
+        </a>
+
+        <a href="./Profile.html">
+
+            <button>
+
+                👤
+
+                <span>Profile</span>
+
+            </button>
+
+        </a>
+
+    </nav>
+
+</header>
+
+<!--================ HERO =================-->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+
+            Discover
+
+            Amazing Music
+
+        </h1>
+
+        <p>
+
+            Search thousands of songs,
+
+            albums,
+
+            artists
+
+            and playlists.
+
+        </p>
+
+        <form
+            id="search-form"
+            autocomplete="off"
+            class="search-box">
+
+            <input
+
+                id="search"
+
+                type="search"
+
+                placeholder="🔍 Search songs, artists or albums..."
+
+            >
+
+            <button type="submit">
+
+                Search
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!--================ TRENDING =================-->
+
+<section class="trending">
+
+<h2>
+
+🔥 Trending Searches
+
+</h2>
+
+<div class="trend-container">
+
+<div class="trend-card">
+
+🎵 Another Trip Around The Sun
+
+</div>
+
+<div class="trend-card">
+
+🎵 Backpack Bounce
+
+</div>
+
+<div class="trend-card">
+
+🎵 Scroll Through The Sky
+
+</div>
+
+<div class="trend-card">
+
+🎵 Summer Nights
+
+</div>
+
+<div class="trend-card">
+
+🎵 Calm Vibes
+
+</div>
+
+<div class="trend-card">
+
+🎵 Midnight Drive
+
+</div>
+
+</div>
+
+</section>
+<!--================ FEATURED MUSIC =================-->
+
+<section class="featured">
+
+    <div class="featured-card">
+
+        <div class="featured-text">
+
+            <span class="featured-tag">
+                FEATURED RELEASE
+            </span>
+
+            <h2>
+                Experience Music Like Never Before
+            </h2>
+
+            <p>
+                Stream high-quality tracks, discover new artists,
+                and enjoy the best songs from Remixio.
+            </p>
+
+            <a href="./Trending.html">
+                <button class="featured-btn">
+                    Explore Now
+                </button>
+            </a>
+
         </div>
 
-        <form id="search-form" class="search-form" autocomplete="off">
-          <input class="input1" type="search" name="q" placeholder="Search tracks…" id="search" aria-label="Search music">
-          <button class="search-go" type="submit" aria-label="Search">Search</button>
-        </form>
-        <div class="search-hint">Type to filter</div>
-      </div>
+        <div class="featured-image">
 
-      <section id="search-results" class="search-results" aria-live="polite"></section>
+            <div class="music-circle">
+
+                🎧
+
+            </div>
+
+        </div>
+
     </div>
-  </div>
-|
-  <script src="./Search.js"></script>
-</body>
-</html>
 
+</section>
+
+<!--================ CATEGORIES =================-->
+
+<section class="categories">
+
+    <h2>
+
+        Browse Categories
+
+    </h2>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            🎵
+            <span>Pop</span>
+        </div>
+
+        <div class="category-card">
+            🎸
+            <span>Rock</span>
+        </div>
+
+        <div class="category-card">
+            🎹
+            <span>Instrumental</span>
+        </div>
+
+        <div class="category-card">
+            🎤
+            <span>Hip-Hop</span>
+        </div>
+
+        <div class="category-card">
+            🎼
+            <span>Classical</span>
+        </div>
+
+        <div class="category-card">
+            🌍
+            <span>Afrobeats</span>
+        </div>
+
+        <div class="category-card">
+            ❤️
+            <span>Love Songs</span>
+        </div>
+
+        <div class="category-card">
+            😴
+            <span>Chill</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ SEARCH RESULTS =================-->
+
+<section class="results-section">
+
+    <div class="results-header">
+
+        <h2>
+
+            Search Results
+
+        </h2>
+
+        <p>
+
+            Find your favourite songs instantly.
+
+        </p>
+
+    </div>
+
+    <section
+        id="search-results"
+        class="search-results"
+        aria-live="polite">
+
+    </section>
+
+</section>
+
+<!--================ POPULAR ARTISTS =================-->
+
+<section class="artists">
+
+    <h2>
+
+        Popular Artists
+
+    </h2>
+
+    <div class="artist-grid">
+
+        <div class="artist-card">
+
+            <div class="artist-image">
+
+                🎤
+
+            </div>
+
+            <h3>
+
+                Remixio Originals
+
+            </h3>
+
+            <p>
+
+                Official Artist
+
+            </p>
+
+        </div>
+
+        <div class="artist-card">
+
+            <div class="artist-image">
+
+                🎧
+
+            </div>
+
+            <h3>
+
+                DJ Remix
+
+            </h3>
+
+            <p>
+
+                Electronic
+
+            </p>
+
+        </div>
+
+        <div class="artist-card">
+
+            <div class="artist-image">
+
+                🎸
+
+            </div>
+
+            <h3>
+
+                Sky Beats
+
+            </h3>
+
+            <p>
+
+                Pop Music
+
+            </p>
+
+        </div>
+
+        <div class="artist-card">
+
+            <div class="artist-image">
+
+                🎼
+
+            </div>
+
+            <h3>
+
+                Dream Orchestra
+
+            </h3>
+
+            <p>
+
+                Instrumental
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ FOOTER =================-->
+
+<footer class="footer">
+
+    <h2>
+
+        🎧 REMIXIO
+
+    </h2>
+
+    <p>
+
+        Listen. Discover. Download.
+
+    </p>
+
+    <div class="footer-links">
+
+        <a href="./MusicHome.html">
+
+            Home
+
+        </a>
+
+        <a href="./Trending.html">
+
+            Trending
+
+        </a>
+
+        <a href="./Search.html">
+
+            Search
+
+        </a>
+
+        <a href="./Profile.html">
+
+            Profile
+
+        </a>
+
+    </div>
+
+    <p class="copyright">
+
+        © 2026 Remixio Music.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script src="./Search.js"></script>
+
+</body>
+
+</html>
