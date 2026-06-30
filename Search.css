@@ -266,6 +266,27 @@ HERO
     padding:50px;
 
 }
+.explore-btn{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#0066ff;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
 
 .hero h1{
 
