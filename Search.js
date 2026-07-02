@@ -149,6 +149,10 @@ window.addEventListener('DOMContentLoaded', () => {
 { id: '145', kind: 'track', title: 'Zinoleesky - Many Things', Audio: '../Zinoleesky_-_Many_Things.mp3' },
 { id: '146', kind: 'track', title: 'Zinoleesky Ft Adekunle Gold - Party No Dey Stop', Audio: '../Zinoleesky-Ft-Adekunle-Gold-Party-No-Dey-Stop-(TrendyBeatz.com).mp3' },
 { id: '147', kind: 'track', title: 'Zlatan Ft Asake & Peruzzi - Mr Money Remix', Audio: '../Zlatan-Ft-Asake-and-Peruzzi-Mr-Money-Remix-(TrendyBeatz.com).mp3' },
+{ id: '148', kind: 'track', title: 'Ella Langley - Choosin Texas', audio: '../Ella Langley - Choosin Texas.mp3' },
+{ id: '149', kind: 'track', title: 'Ella Langley - Be her', audio: '../Ella Langley - Be Her.mp3' },
+{ id: '150', kind: 'track', title: 'Taylor Swift - I Knew it, I Know You', audio: '../Taylor Swift - I Knew it, I Know You.mp3' },
+{ id: '151', kind: 'track', title: 'Olivia Rodrigo - stupid song', audio: '../Olivia Rodrigo - stupid song.mp3' },
   ];
 
   const escapeHtml = (str) => String(str)
