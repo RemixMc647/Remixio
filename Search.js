@@ -178,7 +178,7 @@ window.addEventListener('DOMContentLoaded', () => {
           <div class="search-result" data-item-id="${escapeHtml(m.id)}" data-item-kind="${escapeHtml(m.kind)}" role="group">
             <div class="search-result-title">${escapeHtml(m.title)}</div>
             <div class="search-result-actions">
-              <button class="action-play" type="button" data-action="play">Play</button>
+              <button class="action-play" type="button" data-action="play">Play</button> 
             </div>
           </div>
         `).join('')}
