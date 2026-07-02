@@ -179,7 +179,6 @@ window.addEventListener('DOMContentLoaded', () => {
             <div class="search-result-title">${escapeHtml(m.title)}</div>
             <div class="search-result-actions">
               <button class="action-play" type="button" data-action="play">Play</button>
-              <button class="action-download" type="button" data-action="download">Download</button>
             </div>
           </div>
         `).join('')}
