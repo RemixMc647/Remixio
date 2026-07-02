@@ -1,4 +1,4 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -799,15 +799,37 @@ Receive updates whenever new songs are uploaded to Remixio.
 
 <div class="newsletter-box">
 
+<!--
+    MAILCHIMP SETUP:
+    1. In Mailchimp: Audience > Signup forms > Embedded forms
+    2. Copy the form's "action" URL and paste it below (replace YOUR_MAILCHIMP_ACTION_URL)
+    3. Copy the hidden honeypot input field Mailchimp gives you (looks like
+       name="b_xxxxxxxxxxxxxxxxxxxxx_yyyyyyyyyy") and paste it in place of
+       the placeholder hidden input below - this is a spam trap, must stay empty
+-->
+
+<form id="newsletter-form" action="YOUR_MAILCHIMP_ACTION_URL" method="post" target="_blank" novalidate>
+
 <input
 type="email"
-placeholder="Enter your email">
+name="EMAIL"
+id="newsletter-email"
+placeholder="Enter your email"
+required>
 
-<button>
+<div style="position:absolute; left:-5000px;" aria-hidden="true">
+<input type="text" name="b_xxxxxxxxxxxxxxxxxxxxx_yyyyyyyyyy" tabindex="-1" value="">
+</div>
+
+<button type="submit">
 
 Subscribe
 
 </button>
+
+</form>
+
+<p id="newsletter-message" style="width:100%; margin-top:15px; font-size:15px;"></p>
 
 </div>
 
