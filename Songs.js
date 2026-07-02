@@ -146,4 +146,8 @@ const songs = [
   { title: 'Zinoleesky - Many Things', audio: './Zinoleesky_-_Many_Things.mp3' },
   { title: 'Zinoleesky Ft Adekunle Gold - Party No Dey Stop', audio: './Zinoleesky-Ft-Adekunle-Gold-Party-No-Dey-Stop-(TrendyBeatz.com).mp3' },
   { title: 'Zlatan Ft Asake & Peruzzi - Mr Money Remix', audio: './Zlatan-Ft-Asake-and-Peruzzi-Mr-Money-Remix-(TrendyBeatz.com).mp3' },
+  { title: 'Ella Langley - Choosin Texas', audio: './Ella Langley - Choosin Texas.mp3' },
+  { title: 'Ella Langley - Be her', audio: './Ella Langley - Be Her.mp3' },
+  { title: 'Taylor Swift - I Knew it, I Know You', audio: './Taylor Swift - I Knew it, I Know You.mp3' },
+  { title: 'Olivia Rodrigo - stupid song', audio: './Olivia Rodrigo - stupid song.mp3' },
 ];
